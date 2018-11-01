@@ -5,7 +5,7 @@
     color: #6e6e6e;
 }
 
-#change-display
+.change-display
 {
     display: none;
 }
@@ -24,7 +24,7 @@
 
 .label-display::before
 {
-    content: "\A0";
+    content: '\A0';
     border-top: 3px solid #000;
     position: absolute;
     top: calc(50% - 2px);
@@ -32,19 +32,19 @@
     transition: 200ms;
 }
 
-#change-display:checked ~ .label-display
+.change-display:checked ~ .label-display
 {
     transform: rotate(90deg);
     transition: 200ms;
 }
 
 .listOn,
-#change-display:checked ~ .cats-block .blockOn
+.change-display:checked ~ .cats-block .blockOn
 {
     display: none;
 }
 
-#change-display:checked ~ .cats-block .listOn
+.change-display:checked ~ .cats-block .listOn
 {
     display: block;
 }
@@ -62,7 +62,7 @@
 
 .cats-block:hover
 {
-    box-shadow: 0 0 1px 1px rgba(110, 110, 110, 0.5);
+    box-shadow: 0 0 1px 1px rgba(110, 110, 110, .5);
     transition: 200ms;
 }
 
@@ -71,7 +71,7 @@
     padding-top: 10px;
     padding-bottom: 30px;
     margin-top: -5px;
-    border: 1px solid rgba(110, 110, 110, 0.5);
+    border: 1px solid rgba(110, 110, 110, .5);
     z-index: 2;
 }
 
@@ -79,7 +79,6 @@
 {
     width: 210px;
     height: 140px;
-    background: red;
     margin: 0;
     transition: 200ms;
 }
@@ -135,14 +134,14 @@
     margin-top: 10px;
 }
 
-#change-display:checked ~ .cats-block
+.change-display:checked ~ .cats-block
 {
     display: block;
     width: 540px;
     /*margin: 20px auto;*/
 }
 
-#change-display:checked ~ .cats-block .photo-cat
+.change-display:checked ~ .cats-block .photo-cat
 {
     width: 540px;
     height: 270px;
