@@ -38,13 +38,13 @@
     transition: 200ms;
 }
 
-.listOn,
-.change-display:checked ~ .cats-block .blockOn
+.list-on,
+.change-display:checked ~ .cats-block .block-on
 {
     display: none;
 }
 
-.change-display:checked ~ .cats-block .listOn
+.change-display:checked ~ .cats-block .list-on
 {
     display: block;
 }
